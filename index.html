@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11.1</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 60%;
+        }
+        th{
+          border: 2px solid gray;
+          text-align: center;
+          padding: 8px;
+        }
+        td {
+          border: 2px solid gray;
+          text-align: left;
+          padding: 8px;
+        }
+        label{
+            text-align: left;
+        }
+      </style>
+</head>
+<body>
+    <div style="border: 5px solid black;">
+        <div style="margin-left: 400px;">
+            <table>
+                <thead><tr><th colspan="6" style="font-style: italic;">My tech stock picks</th></tr> </thead>
+                <tr>
+                    <th style="text-align: left;">NAME</th><th style="text-align: left;">SYMBOL</th>
+                        <th style="text-align: left;">CURRENT</th><th style="text-align: left;">52WK HI</th>
+                        <th style="text-align: left;">52WK LO</th><th style="text-align: left;">P/E ratio</th>
+                </tr>
+                <tr>
+                    <td>Microsoft</td><td>MSFT</td><td>86-3/8</td><td>119-15/16</td><td>75-1/2</td><td>56.09</td>
+                </tr>
+                <tr>
+                    <td>Cisco Systems</td><td>CSCO</td><td>72-1/8</td><td>82</td><td>24-13/16</td><td>400.69</td>
+                </tr>
+                <tr>
+                    <td>America Online</td><td>AOL</td><td>63</td><td>95-13/16</td><td>38-15/32</td><td>350.00</td>
+                </tr>
+                <tr>
+                    <td>Qwest Communications</td><td>Q</td><td>44-7/16</td><td>66</td><td>25-3/4</td><td>74.06</td>
+                </tr>
+                <tr>
+                    <td>Dell Computers</td><td>DELL</td><td>53-59/64</td><td>59-11/16</td><td>31-3/8</td><td>86.97</td>
+                </tr>
+            </table>
+        </div>
+        <div style="text-align: center;padding-left: 60px;margin-left: 400px;margin-right: 440px; display: flex; align-items: center;background-color: lightgray; justify-content: center;" class="form-row">
+            <style>
+            .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 20px;
+            }
+            .form-row label {
+            margin-right: 10px;
+            display: flex;
+            }
+            form {
+            max-width: 450px;
+            width: 60%;
+            }
+            label {
+            display: block;
+            }
+            input, textarea {
+            width: 50%;
+            box-sizing: border-box;
+            }
+            input[type="radio"] {
+            margin-right: 5px;
+            display: inline;
+            }
+            </style>
+            <form>
+            <u><h1>Registration form</h1></u>
+            <div class="form-row"><label for="fname">First Name: </label> <input type="text" placeholder="Enter First Name"></div><br>
+            <div class="form-row"><label for="lname">Last Name:  </label> <input type="text" placeholder="Enter last Name"></div><br>
+            <div class="form-row"><label for="Nname">Nick Name:  </label> <input type="text" placeholder="Enter Nick Name"></div><br>
+            <div class="form-row"><label for="e-mail">User_Email:    </label> <input type="text" placeholder="Enter Email"></div><br>
+            <div class="form-row"><label for="pass">Password: </label> <input type="text" placeholder="Enter Password"></div><br>
+            <div class="form-row"><label for="dob">Birth Date: </label> <input type="text" placeholder="Enter date of birth"></div><br>
+            <div class="form-row"><label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value=”Male”> Male
+            <input type="radio" id="Female" name="gender" value=”Female”> Female
+            <input type="radio" id="Other" name="gender" value=”Other”> Other  </div><br>
+            <div class="form-row"><label for="CellNmbr">Mobile No: </label> 
+            <input type="text" id="CellNmbr" name="CellNmbr" placeholder="Enter Number" pattern="[0-9]{11}" maxlength="11" required></div><br>
+            <div class="form-row"><label for="tArea">UserAddress: </label> <textarea id="" cols="30" rows="7"></textarea></div><br>
+            <button>Submit</button> <button>Reset</button>
+        </form>
+        </div>
+        <div style="text-align: left;">
+            <style>
+                 .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 100px;
+        }
+            </style>
+            <h1 style="text-align: center;"><i>Fresh Fruits</i></h1>
+            <div class="container">
+                
+                <p style="max-width: 400px;">It has long been known that a diet <br> that includes atleast a few <br>
+                servings of fresh fruit every day <br> will help keep you healthy, fit and <br> trim.</p>
+                <img style="height: 150px; width: 200px; align-items: center;" src="C:\Users\hp\OneDrive\Desktop\Exercise 11.1\picture\1.jpg">
+            </div>
+            <h3 style="text-align: center;">Here is the same table with the borders turned on...</h3>
+            <div style="margin-left: 400px;">
+            <table>
+                <thead><tr><th colspan="2"><i>Fresh Fruits</i></th></tr> </thead>
+                <tr><td style="border: 2px solid gray;text-align: left;padding: 8px;"><p>It has long been known that a diet <br> that includes atleast a few <br>
+                    servings of fresh fruit every day <br> will help keep you healthy, fit and <br> trim.</p></td>
+                    <td style="text-align: center;"><img src="C:\Users\hp\OneDrive\Desktop\Exercise 11.1\picture\1.jpg" style="height: 150px; width: 200px;"></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
